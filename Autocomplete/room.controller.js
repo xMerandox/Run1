@@ -25,7 +25,7 @@ function initialising(roomId) {
         Memory.Rooms = new Array();
     }
 
-    if (Memory.Rooms.includes(roomId) {
+    if (Memory.Rooms.includes(roomId)) {
         Memory.Rooms.push(roomID);
         console.log("New Room in Memory: " + room.name);
     }
