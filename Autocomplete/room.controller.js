@@ -12,16 +12,21 @@ module.exports = {
     run: function (roomId) {
 
         var room = Game.getObjectById(roomId);
+        initialising(roomId);
 
-
-        if (!Memory.Rooms) {
-            Memory.Rooms = new Array();
-        }
-    
-        if (!Memory.Rooms[roomId]) {
-            Memory.Rooms.push(roomID);
-            console.log("New Room in Memory: " + room.name);
-        }
+        
 
 	 }
 };
+
+
+function initialising(roomId) {
+    if (!Memory.Rooms) {
+        Memory.Rooms = new Array();
+    }
+
+    if (Memory.Rooms.includes(roomId) {
+        Memory.Rooms.push(roomID);
+        console.log("New Room in Memory: " + room.name);
+    }
+}
