@@ -6,5 +6,6 @@ module.exports.loop = function () {
 
     var room = Game.rooms;
 
-    roomController.run(room[0]);
+    console.log(room);
+    roomController.run(room[0].id);
 }
